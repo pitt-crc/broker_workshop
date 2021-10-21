@@ -3,3 +3,11 @@ body {
   padding-top: 50px;
   padding-bottom: 20px;
 }
+
+.jumbotron {
+  background-color: var(--bs-secondary);
+}
+
+.navbar-header {
+  min-height: 40px;
+}
