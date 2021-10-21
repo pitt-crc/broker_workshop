@@ -12,3 +12,11 @@ body {
 .navbar-header {
   min-height: 40px;
 }
+
+footer p {
+  margin: 0;
+}
+
+footer .row {
+  padding: 0 30px;
+}
