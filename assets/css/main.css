@@ -6,6 +6,7 @@ body {
 
 .jumbotron {
   background-color: var(--bs-secondary);
+  padding-bottom: 20px;
 }
 
 .navbar-header {
