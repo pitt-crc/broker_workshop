@@ -20,3 +20,7 @@ footer p {
 footer .row {
   padding: 0 30px;
 }
+
+ul.agenda-items > li {
+  margin-top: 6px;
+}
