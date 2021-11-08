@@ -24,3 +24,9 @@ footer .row {
 ul.agenda-items > li {
   margin-top: 6px;
 }
+
+i {
+  margin: 0 5px;
+}
+
+div.session-header > h4 { display: inline-block; }
