@@ -54,7 +54,7 @@
 
   <div class="row">
     <div class="col">
-      <p>The agenda below is subject to change. Please check back regularly for any updates.</p>
+      <p>The agenda below is subject to change. Please check back regularly for any updates. Starter questions are provided <b>as suggestions</b> by the organizing committee to help guide each discussion session topics.</p>
     </div>
   </div>
 
@@ -71,18 +71,34 @@
         <li>(5 min) Introductory Remarks</li>
         <li>(15 min) Presentation - API design of the Rubin alert distribution system (Spencer Nelson)</li>
         <li>(45 min) Discussion - Data Transport Mechanisms (Kafka, Avro, PubSub, etc.)</li>
+        <ul>
+          <li>What technologies are people using (e.g., Kafka, Avro, PubSub)?</li>
+          <li>What are the benefits and challenges to each of these?</li>
+        </ul>
         <li>(15 min) Break</li>
       </ul>
       <h4>Session 2 (16:15-17:15 UTC)</h4>
       <ul>
         <li>(15 min) Presentation - Setting up "SSL" for Kafka (Adam Scott)</li>
         <li>(45 min) Discussion - Connection Between PPDB and Brokers</li>
+        <ul>
+          <li>Will LSST support syncing the schema / data so that Broker DBs correctly/authoritatively mirror PPDB products?</li>
+          <li>Do we keep separate copies for data rights holders and public users?</li>
+          <li>Who pays for hosting duplicate PPDB?</li>
+        </ul>
         <li>(15 min) Break</li>
       </ul>
       <h4>Session 3 (17:30-18:30 UTC)</h4>
       <ul>
         <li>(15 min) Presentation - Pub/Sub and Kafka (Troy Raen)</li>
         <li>(45 min) Discussion - Supporting user data access: streaming V.S. database access</li>
+        <ul>
+          <li>What are the data access patterns that we care about (i.e., what user stories are we developing around)?</li>
+          <li>Are we focusing on streams too much?</li>
+          <li>How does this inform our data storage solution?</li>
+          <li>What are the database technologies being used?</li>
+          <li>How do data storage solutions differ in development time, maintenance, cost, and scalability?</li>
+        </ul>
       </ul>
     </div>
   </div>
@@ -99,18 +115,34 @@
       <ul>
         <li>(15 min) Presentation - Distributed database for time-series using Apache HBase: lessons learned (Julien Peloton)</li>
         <li>(45 min) Discussion - Standardization and interoperability between brokers</li>
+        <ul>
+          <li>Is there a clear idea on <b>what</b> should be standardized?</li>
+          <li>Are there standards we should adopt?</li>
+          <li>Are there key design questions, or are first-mover decisions largely fine?</li>
+          <li>Are there common code-bases we could be sharing/developing?</li>
+        </ul>
         <li>(15 min) Break</li>
       </ul>
       <h4 class="session-title">Session 5 (16:15-17:15 UTC)</h4>
       <ul>
         <li>(15 min) Presentation - Real time host galaxy identification from multi resolution images (Francisco Forster)</li>
         <li>(45 min) Discussion - Supporting reproducible analyses in the long term</li>
+        <ul>
+          <li>How do we guarantee an analysis can be rerun 1, 5, 10, or more years from now?</li>
+          <li>Reproduction includes services, not just data</li>
+        </ul>
         <li>(15 min) Break</li>
       </ul>
       <h4 class="session-title">Session 6 (17:30-18:30 UTC)</h4>
       <ul>
         <li>(15 min) Presentation - Organizing spatially indexed data with Cassandra (Ken Smith)</li>
         <li>(45 min) Discussion - Cross broker services and communication</li>
+        <ul>
+          <li>How to handle cross matching across brokers?</li>
+          <li>What non-rubin data sources are we considering?</li>
+          <li>Who determines/maintains the data rights permissions for each user / group?</li>
+          <li>What mechanism should be used for passing authentication information around?</li>
+        </ul>
       </ul>
     </div>
   </div>
