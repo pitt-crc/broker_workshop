@@ -1,0 +1,11 @@
+version: "3"
+services:
+  connector:
+    build: .
+    volumes:
+      - .:/pubsub_kafka
+    environment:
+      - GOOGLE_CLOUD_PROJECT=pitt-broker-user-project
+      - GOOGLE_APPLICATION_CREDENTIALS=GCP_auth_key-pitt_broker_user_project.json
+    stdin_open: true
+    tty: true
