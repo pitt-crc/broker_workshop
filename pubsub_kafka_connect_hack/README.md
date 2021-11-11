@@ -8,19 +8,20 @@ In this hack, we aim to setup a Pub/Sub -> Kafka connector that pulls messages f
 - [x] [2. Create a cluster that runs a Kafka broker and related services, without the connector](#2-run-confluent-platform-broker-and-related-services-without-connector). We must run a broker in order to actually publish the stream.
 - [ ] [3. Add the connector to the cluster running the Kafka broker](#3-add-the-connector-to-the-cluster-running-the-kafka-broker)
 
-## Some Basic Info
-
 By the end of the hack, I (Troy Raen) had completed steps 1 and 2.
 Step 3 remains to be done.
 
-The connector relies on three config files.
+## Some Basic Info
+
+The connector ([kafka-connector](https://github.com/GoogleCloudPlatform/pubsub/tree/master/kafka-connector), aka "CloudPubSubConnector") is run by calling a bin file and passing in some configs.
+It relies on three config files, listed below.
 At this point they are mostly complete, but they may still require modification.
 
 - admin.properties
 - ps-connector.properties
 - psconnect-worker.properties
 
-We will use "standalone" mode for simplicity, but there is also a "distributed" mode.
+We will run the connector in "standalone" mode for simplicity, but there is also a "distributed" mode.
 
 In order to listen to the Pub/Sub stream, one must have access to a Google Cloud project and a credentials file.
 A test project has already been set up to facilitate this.
