@@ -5,7 +5,7 @@ WORKDIR /pubsub_kafka
 COPY . .
 
 RUN apt-get update &&\
-   apt-get install -y wget gnupg software-properties-common
+   apt-get install -y wget less nano gnupg software-properties-common
 
 RUN apt-get update &&\
    apt-get install -y default-jre
