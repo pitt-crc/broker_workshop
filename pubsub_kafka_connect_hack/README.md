@@ -24,9 +24,9 @@ At this point they are mostly complete, but they may still require modification.
 We will run the connector in "standalone" mode for simplicity, but there is also a "distributed" mode.
 
 In order to listen to the Pub/Sub stream, one must have access to a Google Cloud project and a credentials file.
-A test project has already been set up to facilitate this.
+I set up a test project set up to facilitate this, and I'm happy to let others use it.
 The project ID is `pitt-broker-user-project`.
-To obtain credentials, contact Troy Raen at troy.raen@pitt.edu or @troyraen on lsstc.slack.com.
+To obtain credentials, contact me at troy.raen@pitt.edu or @troyraen on lsstc.slack.com.
 
 The Pub/Sub subscription we will pull from is attached to this project, and is named "ztf-loop".
 It is a "heartbeat" stream publishing ~1 alert/second.
